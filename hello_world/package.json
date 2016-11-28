@@ -1,0 +1,13 @@
+{
+  "name": "amqp_hello_world",
+  "version": "1.0.0",
+  "description": "RabbitMQ Hello World",
+  "main": "client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "RabbitMQ.com",
+  "dependencies": {
+    "amqplib": "^0.5.1"
+  }
+}
