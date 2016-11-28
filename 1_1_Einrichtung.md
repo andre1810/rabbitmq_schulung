@@ -18,6 +18,10 @@
   ...
   ```
 
+# Landrush unter Mac OS X
+
+- [How to avoid providing sudo password on OS X](https://github.com/vagrant-landrush/landrush/blob/master/doc/Troubleshooting.adoc#how-to-avoid-providing-sudo-password-on-os-x)
+
 # Vagrant Referenz
 
 - VM starten: `vagrant up`
