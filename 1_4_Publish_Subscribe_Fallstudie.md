@@ -15,7 +15,7 @@ Ihre Aufgabe ist nun, das Pollen der Anwendungen auf Messaging umzustellen und Ã
 5. Starten Sie die Anwendungen
 
 6. Stoppen Sie einen beilieben Subscriber
-  - Stellen Sie die Anwendung um, so dass die Events auf dem RabbitMQ Server vorgehalten werden, wenn ein Subscriber nicht verbunden ist und die Nachrichten dann konsumiert werden, wenn die Anwendung wieder startet.
+  - Stellen Sie die Anwendung um, so dass die ShopEvents auf dem RabbitMQ Server vorgehalten werden, wenn der Subscriber nicht verbunden ist und die Nachrichten dann wieder konsumiert werden, wenn die Anwendung/der Subscriber wieder startet.
 
 ## Rahmenbedingungen
 
