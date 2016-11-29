@@ -17,4 +17,4 @@ Mit Bezug auf die 1. Fallstudie:
 
 - [json-schema für php](https://github.com/justinrainbow/json-schema)
 - [json-schema für python](https://pypi.python.org/pypi/jsonschema)
--[json-schema-validator für Java](https://github.com/daveclayton/json-schema-validator)
+- [json-schema-validator für Java](https://github.com/daveclayton/json-schema-validator)
