@@ -1,12 +1,15 @@
 # Clustering
 
 1. Erstellen Sie ein Cluster mit 3 Nodes
-   - VM erstellen/starten
+
+   - VM´s  erstellen/starten
    - RabbitMQ installieren
    - USE_LONGNAME=true konfigurieren um FQDN zu unterstützen
    - Erlang Cookie setzen
+   - Cluster in rabbitmq.conf der Node rabbit02 deklarieren
+   - Cluster mit rabbit03 über rabbitmqctl beitreten
    - RabbitMQ Service neustarten
-   - Cluster neustarten
+   - Cluster status abrufen
 
 In den nachfolgenden Schritten wird der Ausfall eines Cluster Slaves simuliert:
 
