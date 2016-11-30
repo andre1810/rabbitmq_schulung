@@ -10,7 +10,7 @@
    set httpd port 2812 and
      use address 192.168.33.101
      allow admin:monit
-   ``
+   ```
 
 3. `/etc/monit/conf.d/rabbitmq` erstellen:
    ```
