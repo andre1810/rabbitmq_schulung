@@ -13,32 +13,38 @@
 
 In den nachfolgenden Schritten wird der Ausfall eines Cluster Slaves simuliert:
 
-2. Pausieren Sie Nodes
+2. Pausieren Sie Nodes:
    ```
    VBoxmanage list vms
    VBoxManage controlvm rabbit02 pause
    VBoxManage controlvm rabbit02 resume
    ```
 
-3. Frieren Sie die Node ein
+3. Frieren Sie die Node ein:
    ```
    VBoxManage controlvm rabbit02 savestate
    VBoxManage startvm rabbit02 --type headless
    ```
 
-4. Fahren Sie Nodes sauber herunter
+4. Fahren Sie Nodes sauber herunter:
    ```
    VBoxManage controlvm rabbit02 acpipowerbutton
    VBoxManage startvm rabbit02 --type headless
    ```
 
-5. Trennen und verbinden Sie die Netzwerkverbindung der VM
+5. Trennen und verbinden Sie die Netzwerkverbindung der VM:
    ```
    VBoxManage constrolvm rabbit02 setlinkstate1 off
    VBoxManage constrolvm rabbit02 setlinkstate2 off
    VBoxManage constrolvm rabbit02 setlinkstate1 on
    VBoxManage constrolvm rabbit02 setlinkstate2 on
    ```
+
+6. Bauen Sie die [Consumer Cancel Notify](https://www.rabbitmq.com/ha.html#cancellation) in Ihren Consumer ein und simulieren Sie einen Failover der Slave, mit der sich der Consumer verbunden hat.
+
+7. Erstellen Sie eine Policy für eine Queue *my_mirrored_queue* und spiegeln diese über alle Cluster Nodes.
+
+8. Verändern Sie den `ha-mode` Policy, so dass nur noch eine Node für als mirror ausgewählt wird.
 
 ## Fragen
 - Wie verhält sich das Cluster?
