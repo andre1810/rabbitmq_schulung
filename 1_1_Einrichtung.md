@@ -3,14 +3,14 @@
 1. Virtual Box installieren: https://www.virtualbox.org/wiki/Downloads
 2. vagrant installieren: https://www.vagrantup.com/downloads.html
 3. landrush (Lokaler DNS Server für vagrant VM´s) installieren: `vagrant plugin install landrush`
-4. Debian 8 (jessie) Box hinzufügen: `vagrant box add debian/jessie64`
+4. Debian 8 (jessie) Box hinzufügen: `vagrant box add debian/stretch64`
 
 # Test der Umgebung
 
-- Virtual Box installiert? `vboxmanage -v` -> `4.3.26r98988`
-- Vagrant installiert? `vagrant -v` -> `Vagrant 1.8.7`
+- Virtual Box installiert? `vboxmanage -v` -> `5.1.28r117968`
+- Vagrant installiert? `vagrant -v` -> `Vagrant 2.0.0`
 - Landrush installiert? `vagrant plugin list | grep "landrush"` -> `landrush (1.1.2)`
-- Debian 8 Vagrant Box installiert? `vagrant box list | grep "debian/jessie"` -> `debian/jessie64 (virtualbox, 8.6.1)`
+- Debian 8 Vagrant Box installiert? `vagrant box list | grep "debian/strech"` -> `debian/stretch64 (virtualbox, 8.6.1)`
 - VM erreichbar -> `ping rabbit01.vagrant.test`:
   ```
   PING rabbit01.vagrant.test (192.168.33.101): 56 data bytes
