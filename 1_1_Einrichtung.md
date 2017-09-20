@@ -10,7 +10,7 @@
 - Virtual Box installiert? `vboxmanage -v` -> `5.1.28r117968`
 - Vagrant installiert? `vagrant -v` -> `Vagrant 2.0.0`
 - Landrush installiert? `vagrant plugin list | grep "landrush"` -> `landrush (1.1.2)`
-- Debian 8 Vagrant Box installiert? `vagrant box list | grep "debian/strech"` -> `debian/stretch64 (virtualbox, 8.6.1)`
+- Debian 9 Vagrant Box installiert? `vagrant box list | grep "debian/stretch"` -> `debian/stretch64 (virtualbox, 9.1.0)`
 - VM erreichbar -> `ping rabbit01.vagrant.test`:
   ```
   PING rabbit01.vagrant.test (192.168.33.101): 56 data bytes
