@@ -1,10 +1,14 @@
 # Failover mit Haproxy
 
-1. Erstellen Sie die VM loadbalancer01
+1. Erstellen Sie die VM `loadbalancer01`
 
 2. Installieren und konfigurieren Sie haproxy
 
-3. Testen Sie den Failover der RabbitMQ Nodes und schauen Sie sich den Status im Webinterface an.
+   `sudo apt-get install haproxy`
+
+3. Testen Sie den Failover der RabbitMQ Nodes und schauen Sie sich den Status im [Haproxy Webinterface](http://loadbalancer01.vagrant.test:8080/haproxy?stats) an.
+
+   Login: haproxy PW: secret
 
 ## Haproxy Konfiguration
 
@@ -33,7 +37,8 @@ listen  rabbitmq
         server rabbit01 192.168.33.101:5672 check inter 5000 downinter 500
         server rabbit02 192.168.33.102:5672 check inter 5000 backup
         server rabbit03 192.168.33.103:5672 check inter 5000 backup
-``
+```
 
 ## Weiterführende Links
-- [Haproxy Webinterface](http://loadbalancer01.vagrant.test:8080/haproxy?stats)
+- [Haproxy Webseite](http://www.haproxy.org/)
+- [Haproxy Webinterface auf loadbalancer01.vagrant.test](http://loadbalancer01.vagrant.test:8080/haproxy?stats)

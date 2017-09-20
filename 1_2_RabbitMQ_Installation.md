@@ -25,3 +25,10 @@ sudo service rabbitmq-server restart
 - URL:      http://rabbit01.vagrant.test:15672
 - Login:    guest
 - Passwort: guest
+
+# Config Template
+- Alte Struktur
+https://raw.githubusercontent.com/rabbitmq/rabbitmq-server/stable/docs/rabbitmq.config.example
+- Neue Struktur (ab 3.7.0)
+https://raw.githubusercontent.com/rabbitmq/rabbitmq-server/master/docs/rabbitmq.conf.example
+https://raw.githubusercontent.com/rabbitmq/rabbitmq-server/master/docs/advanced.config.example

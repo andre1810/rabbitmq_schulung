@@ -1,6 +1,6 @@
 # Direct Exchange
 
-Ihr Unternehmen bietet eine Webanwendung als Software-as-a-Service mit Abo-Modell an. Die Abrechnung wird von einer Applikation durchgeführt. Anschließend wird eine Rechnung als PDF erzeugt und per Email oder per Post versendet. Die Anwendung ist gewachsen und ist schlecht wartbar.
+Ihr Unternehmen bietet eine Webanwendung als Software-as-a-Service mit Abonnement-Modell an. Die Abrechnung wird von einer Applikation durchgeführt. Anschließend wird eine Rechnung als PDF erzeugt und per Email oder per Post versendet. Die Anwendung ist gewachsen und lässt sich immer aufwändiger warten/aktualisieren. Zusätzlich sollen in Zukunft weitere Transportwege (Online Archiv, ...) unterstützt werden.
 
 Ihre Aufgabe ist nun, das Versenden der Rechnung per Email und per Post in zwei Anwendungen zu extrahieren und über RabbitMQ mit AMQP abzubilden.
 

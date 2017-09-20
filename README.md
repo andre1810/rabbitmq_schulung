@@ -1,1 +1,1 @@
-# rabbitmq_schulung
+# RabbitMQ Schulung
