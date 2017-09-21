@@ -17,7 +17,7 @@
 ```
 listen  stats
         mode            http
-        bind 192.168.33.10:8080
+        bind 192.168.33.100:8080
         log             global
         maxconn 10
         stats enable
