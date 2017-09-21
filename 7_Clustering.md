@@ -9,7 +9,7 @@
    - Cluster in rabbitmq.conf der Node rabbit02 deklarieren
    - Cluster mit rabbit03 über rabbitmqctl beitreten
    - RabbitMQ Service neustarten
-   - Cluster status abrufen
+   - Cluster Status abrufen
 
 In den nachfolgenden Schritten wird der Ausfall eines Cluster Slaves simuliert:
 
@@ -63,3 +63,9 @@ sudo chmod 0600 /var/lib/rabbitmq/.erlang.cookie
 
 sudo service rabbitmq-server restart
 ```
+
+## Queue Sync Policy
+```
+rabbitmqctl set_policy ha-all "" '{"ha-mode":"all","ha-sync-mode":"automatic"}'
+```
+
