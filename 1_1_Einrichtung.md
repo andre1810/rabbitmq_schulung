@@ -17,7 +17,14 @@
   64 bytes from 192.168.33.101: icmp_seq=0 ttl=64 time=0.289 ms
   ...
   ```
-
+- VM kann auf apt zugreifen:
+  ```
+  vagrant@rabbit01:~$ sudo apt-get update
+  Ign:1 http://deb.debian.org/debian stretch InRelease
+  Hit:2 http://deb.debian.org/debian stretch Release
+  Hit:4 http://security.debian.org/debian-security stretch/updates InRelease
+  Reading package lists... Done
+  ```
 # Landrush unter Mac OS X
 
 - [How to avoid providing sudo password on OS X](https://github.com/vagrant-landrush/landrush/blob/master/doc/Troubleshooting.adoc#how-to-avoid-providing-sudo-password-on-os-x)
